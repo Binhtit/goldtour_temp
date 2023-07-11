@@ -1,0 +1,17 @@
+@import "./variables";
+
+html,
+body {
+  scroll-behavior: smooth;
+  overflow-x: unset !important;
+  box-sizing: border-box;
+  // font-family: $font-family-default !important;
+  font-size: $font-size-default;
+  line-height: 24px;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}

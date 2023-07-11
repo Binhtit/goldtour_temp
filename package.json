@@ -1,0 +1,71 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "yarn lint:js && yarn lint:prettier",
+    "lintfix": "eslint --fix --ext \".ts,.js,.vue\" --ignore-path .gitignore .",
+    "lint:js": "eslint --ext \".js,.ts,.vue\" --ignore-path .gitignore .",
+    "lint:prettier": "prettier --check .",
+    "lint:staged": "lint-staged",
+    "format": "prettier --check ."
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.19.1",
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "@nuxtjs/eslint-config-typescript": "^12.0.0",
+    "@nuxtjs/stylelint-module": "^4.1.0",
+    "@nuxtjs/svg-sprite": "^0.5.2",
+    "@nuxtjs/tailwindcss": "^6.2.0",
+    "@popperjs/core": "^2.11.6",
+    "@typescript-eslint/eslint-plugin": "^5.6.0",
+    "@typescript-eslint/parser": "^5.6.0",
+    "@vue/eslint-config-standard": "^8.0.1",
+    "bootstrap": "^5.2.3",
+    "eslint": "^8.4.1",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-nuxt": "^4.0.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.8.0",
+    "lint-staged": "11.1.4",
+    "nuxt": "3.0.0",
+    "prettier": "^2.8.1",
+    "prettier-stylelint": "^0.4.2",
+    "pug": "^3.0.2",
+    "pug-plain-loader": "^1.1.0",
+    "sass": "^1.57.1",
+    "sass-loader": "10",
+    "stylelint": "^14.13.0",
+    "stylelint-config-recommended-scss": "^6.0.0",
+    "stylelint-config-recommended-vue": "^1.4.0",
+    "stylelint-config-standard": "^28.0.0",
+    "stylelint-config-standard-scss": "^4.0.0",
+    "stylelint-prettier": "^2.0.0",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.4.6",
+    "bootstrap-vue-3": "^0.5.1",
+    "cosmiconfig-typescript-loader": "^4.3.0",
+    "nuxt-swiper": "^0.1.6",
+    "pinia": "^2.0.28",
+    "stylelint-selector-bem-pattern": "^2.1.1",
+    "ts-node": "^10.9.1",
+    "vue-i18n": "^9.2.2",
+    "vue-sweetalert2": "^5.0.5"
+  },
+  "lint-staged": {
+    "**/*.{js,ts,vue,html,css}": [
+      "yarn lint"
+    ]
+  }
+}

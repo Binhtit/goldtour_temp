@@ -1,0 +1,5 @@
+.nuxt
+.env
+node_modules/
+package-lock.json
+static/plugin/googleAnalytics.js

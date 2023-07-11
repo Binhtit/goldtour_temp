@@ -1,0 +1,17 @@
+components.d.ts
+package-lock.json
+node_modules
+npm-lock.yaml
+.nuxt
+yarn.lock
+components.d.ts
+.env
+.DS_Store
+.output
+utils/app.ts
+pages/news/index.vue
+lint_rules
+.eslintrc.js
+.github
+.npmrc
+tsconfig.json
